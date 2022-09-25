@@ -1,0 +1,112 @@
+.advantage {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-list {
+        list-style: none;
+    }
+    &__item-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__item-text {
+        font-size: 14px;
+        line-height: 1.71;            
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-color);
+    }
+    &__item-box {
+        width: 450px;
+        height: 120px;
+        background-color: var(--team-bg-color);
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantage-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .advantage__item-box {
+        width: 354px;
+    }
+    .advantage__item-title {
+        text-align: start;
+    }
+    .advantage__item-text {
+        width: 354px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .advantage-list {
+        flex-wrap: nowrap;
+        column-gap: 30px;
+    }
+    .advantage__item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+    .advantage__item-box {
+        width: 270px;
+    }
+    .advantage__item-text {
+        width: 270px;
+        }
+}
+
+
+
+// .advantage {
+//     &-list {
+//             list-style: none;
+//             display: flex;
+//             column-gap: 30px;
+//         }
+//     &__item-title {
+//             font-weight: 700;
+//             font-size: 14px;
+//             line-height: 1.14;
+//             letter-spacing: 0.03em;
+//             text-transform: uppercase;
+//             margin-bottom: 10px;
+//                 }
+//     &__item-text {       
+//             font-size: 14px;
+//             line-height: 1.71;            
+//             letter-spacing: 0.03em;
+//             color: var(--secondary-text-color);
+//         }
+//     &__item {
+//             flex-basis: calc((100% - 90px) / 4);
+//         }
+//     &__item-box {
+//             width: 270px;
+//             height: 120px;
+//             background-color: var(--team-bg-color);
+//             margin-bottom: 30px;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//         }
+
+
+// }
+
+
+
+
+
+
+
+

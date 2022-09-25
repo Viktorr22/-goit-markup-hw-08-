@@ -1,0 +1,177 @@
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .header-contacts {
+        display: none;
+    }
+    .open-mobile-menu-btn {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        line-height: 0;
+    }
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .header__container {
+        justify-content: flex-start;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .open-mobile-menu-btn {
+        display: none;
+    } 
+        .menu {
+            display: flex;
+            list-style: none;
+            column-gap: 50px;
+            align-items: stretch;
+            margin-left: 87px;
+        }
+    
+        .menu__link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: var(--primary-text-color);
+            text-decoration: none;
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            transition: color var(--transit-dur-func);
+
+            &:hover, &:focus {
+              color: var(--accent-color);
+            }
+            &_current {
+              color: var(--accent-color);
+              position: relative;
+            }
+            &_current::after {
+              content: '';
+              width: 100%;
+              height: 4px;
+              border-radius: 2px;
+              background-color: var(--accent-color);
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+
+        }
+        .header-contacts {
+            list-style: none;
+            margin-left: auto;
+
+            &__link {
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: 0.02em;
+                color: var(--secondary-text-color);
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+                }
+            &__envelope-icon {
+                width: 14px;
+                height: 10px;
+                fill: currentColor;
+                }
+            &__smartphone-icon {
+                width: 10px;
+                height: 14px;
+                fill: currentColor;
+                }
+            &__item:not(:last-child) {
+                margin-bottom: 10px;
+                }
+            &__link:hover, &:focus {
+                color: var(--accent-color);
+                }
+        }               
+        
+}
+
+@media screen and (min-width: 1200px) {
+    .header-contacts__link {
+        font-size: 14px;
+    }
+    .header-contacts {
+        display: flex;
+        column-gap: 30px;
+    }
+    .menu {
+        margin-left: 93px;
+    }
+    
+}
+
+
+// .header {
+//     border-bottom: 1px solid #ececec;
+
+//     &-container {
+//             display: flex;
+//             align-items: center;
+//         }
+// }
+
+
+// .header-contacts {
+//     list-style: none;
+//     margin-left: auto;
+//     display: flex;
+//     column-gap: 50px;
+
+//     &__envelope-icon {
+//             margin-right: 10px;
+//             fill: currentColor;
+//         }
+    
+//         &__smartphone-icon {
+//             margin-right: 10px;
+//             fill: currentColor;
+//         }
+    
+//         &__envelope-box {
+//             display: flex;
+//             align-items: center;
+//         }
+    
+//         &__smartphone-box {
+//             display: flex;
+//             align-items: center;
+//         }
+// }
+
+// .header-contacts__link {
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: var(--secondary-text-color);
+//     text-decoration: none;
+//     display: flex;
+//     align-items: center;
+//     transition: color var(--transit-dur-func);
+
+//     &:hover,
+//         &:focus {
+//             color: var(--accent-color);
+//         }
+// }
+
+
