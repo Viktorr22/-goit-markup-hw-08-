@@ -26,6 +26,16 @@
     &__item-box {
             position: relative;
         }
+    &__item {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .work {
+        display: none;
+    }
+    
 }
 
 

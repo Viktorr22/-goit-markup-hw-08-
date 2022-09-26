@@ -1,7 +1,5 @@
 .advantage {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
+    
     &-list {
         list-style: none;
     }
@@ -21,14 +19,16 @@
         color: var(--secondary-text-color);
     }
     &__item-box {
-        width: 450px;
+        width: 100%;
         height: 120px;
         background-color: var(--team-bg-color);
         margin-bottom: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
-
+    }
+    &__item {
+        flex-basis: 100%;
     }
 }
 
@@ -46,6 +46,9 @@
     }
     .advantage__item-text {
         width: 354px;
+    }
+    .advantage__item {
+        flex-basis: calc((100% - 30px) / 2);
     }
 }
 
