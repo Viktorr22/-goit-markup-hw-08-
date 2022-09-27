@@ -98,7 +98,7 @@
             &__item:not(:last-child) {
                 margin-bottom: 10px;
                 }
-            &__link:hover, &:focus {
+            &__link:hover, &__link:focus {
                 color: var(--accent-color);
                 }
         }               
