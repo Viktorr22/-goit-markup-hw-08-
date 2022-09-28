@@ -867,9 +867,10 @@ textarea::-webkit-input-placeholder {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .clients__item {
-  width: 210px;
+  flex-basis: calc((100% - 30px) / 2);
   height: 92px;
 }
 

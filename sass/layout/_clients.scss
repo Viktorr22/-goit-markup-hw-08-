@@ -3,10 +3,11 @@
        list-style: none;
        display: flex;
        flex-wrap: wrap;
-       gap: 30px;    
+       gap: 30px;
+       justify-content: center;    
     }
-    &__item {
-       width: 210px;
+    &__item {    
+       flex-basis: calc((100% - 30px) / 2);
        height: 92px;
     }
 }
