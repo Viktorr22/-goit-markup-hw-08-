@@ -39,13 +39,13 @@
 }
 @media screen and (min-width: 768px) {
     .clients__item {
-        width: 226px;
+        flex-basis: calc((100% - 60px) / 3);
     }
 
 }
 @media screen and (min-width: 1200px) {
     .clients__item {
-        width: 170px;
+        flex-basis: calc((100% - 150px) / 6);
     }
 
 }
