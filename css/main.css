@@ -415,7 +415,7 @@ textarea::-webkit-input-placeholder {
     fill: var(--accent-color);
   }
   .mobile-menu__list {
-    margin-bottom: 306px;
+    margin-bottom: 32px;
   }
   .mobile-menu__contact-list {
     margin-bottom: 64px;
@@ -478,6 +478,9 @@ textarea::-webkit-input-placeholder {
 @media screen and (min-width: 420px) {
   .mobile-menu__container {
     padding-left: 40px;
+  }
+  .mobile-menu__list {
+    margin-bottom: 306px;
   }
 }
 @media screen and (max-width: 325px) {

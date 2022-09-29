@@ -56,7 +56,7 @@
     }
 
     .mobile-menu__list {
-        margin-bottom: 306px;
+        margin-bottom: 32px;
     }
 
     .mobile-menu__contact-list {
@@ -132,11 +132,16 @@
     .mobile-menu__container {
         padding-left: 40px;
     }
+    .mobile-menu__list {
+        margin-bottom: 306px;
+    }
+   
 }
 @media screen and (max-width: 325px) {
     .mobile-menu__contact-tel {
         font-size: 32px;
     }
+   
 }
 
 
