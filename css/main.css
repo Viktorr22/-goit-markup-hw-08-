@@ -205,6 +205,12 @@ body {
     height: 581px;
   }
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+    height: 581px;
+  }
+}
 .modal-form__title {
   display: block;
   font-weight: 700;
@@ -392,7 +398,6 @@ textarea::-webkit-input-placeholder {
   }
   .mobile-menu__container {
     position: relative;
-    padding-left: 40px;
     height: 100%;
     padding-top: 40px;
     background-color: var(--primary-bg-color);
@@ -417,7 +422,8 @@ textarea::-webkit-input-placeholder {
   }
   .mobile-menu__social-list {
     display: flex;
-    column-gap: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
   }
   .mobile-menu__link {
     font-weight: 500;
@@ -439,6 +445,7 @@ textarea::-webkit-input-placeholder {
     font-size: 34px;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+    max-width: 100%;
   }
   .mobile-menu__contact-item:not(:last-child) {
     margin-bottom: 32px;
@@ -466,6 +473,16 @@ textarea::-webkit-input-placeholder {
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
+  }
+}
+@media screen and (min-width: 420px) {
+  .mobile-menu__container {
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .mobile-menu__contact-tel {
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -591,7 +608,7 @@ textarea::-webkit-input-placeholder {
 .hero__title {
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.62;
+  line-height: 1.36;
   margin-bottom: 30px;
   text-align: center;
   letter-spacing: 0.06em;
@@ -602,7 +619,7 @@ textarea::-webkit-input-placeholder {
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/header@2x.jpg);
-    background-size: 480px 400px;
+    background-size: 100%;
   }
 }
 .hero__button {
@@ -647,8 +664,8 @@ textarea::-webkit-input-placeholder {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/hero.jpg);
     max-width: 1600px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   .hero__title {
     font-size: 44px;
@@ -1017,7 +1034,7 @@ textarea::-webkit-input-placeholder {
   margin-right: auto;
 }
 .footer-form__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: var(--bg-color-foother);
   padding-left: 16px;
@@ -1027,6 +1044,11 @@ textarea::-webkit-input-placeholder {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-information {
     display: flex;
@@ -1054,8 +1076,12 @@ textarea::-webkit-input-placeholder {
   }
   .footer-information {
     justify-content: start;
+    align-items: baseline;
     margin-bottom: 0;
     column-gap: 70px;
+  }
+  .footer-form__input {
+    width: 358px;
   }
 }
 .project {
@@ -1180,5 +1206,10 @@ textarea::-webkit-input-placeholder {
 @media screen and (min-width: 1200px) {
   .project-list__item {
     flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (max-width: 350px) {
+  .project-menu {
+    width: 320px;
   }
 }/*# sourceMappingURL=main.css.map */
